@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atualizar Texto do Parágrafo</title>
+</head>
+<body>
+
+<!-- Campo de entrada de texto -->
+<input type="text" id="campo-de-texto">
+
+<!-- Parágrafo -->
+<p id="paragrafo"></p>
+
+<script>
+    // Seleciona o campo de entrada de texto e o parágrafo
+    var campoDeTexto = document.getElementById("campo-de-texto");
+    var paragrafo = document.getElementById("paragrafo");
+
+    // Adiciona um evento de "input" ao campo de texto
+    campoDeTexto.addEventListener("input", function() {
+        // Atualiza o texto do parágrafo com o valor do campo de texto
+        paragrafo.textContent = campoDeTexto.value;
+    });
+</script>
+
+</body>
+</html>
