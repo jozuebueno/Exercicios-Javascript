@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar Texto</title>
+  <style>
+    div{
+        width: 100px;
+        height: 200px;
+        background-color:black;
+    }
+
+
+    
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    
+    .item-clicado {
+        background-color: green; 
+    }
+</style>
+</head>
+<body>
+  <p id="paragrafo">Texto original</p><!-- exercicio 1 -->
+  <button id="alterarTextoBtn">Alterar Texto</button> 
+
+  
+  <button onclick="criarLista()">Criar Lista</button>  <!-- exercicio 2 -->
+
+  <button onclick="changeColor()">Alterar Cor</button><!-- exercicio 3 -->
+<div id="myDiv" style="width: 100px; height: 200px; background-color: rgb(196, 34, 13);"></div>
+<h1>formulario</h1> 
+
+<form id="meuFormulario"><!-- exercicio 4 -->
+  <label for="texto">Digite algo:</label><br>
+  <input type="text" id="texto" name="texto"><br><br>
+  <button type="button" onclick="exibirTexto()">Exibir</button>
+</form>
+
+<p id="resultado"></p> 
+
+
+<div class="minha-div" onmouseover="mudarCor()" onmouseout="resetarCor()"></div> <!-- exercicio 5-->
+
+
+<input type="text" id="campo-de-texto"> <!-- exercicio 6 -->
+<p id="paragrafo"></p>
+
+
+
+<ul><!-- exercicio 7 -->
+  <li onclick="alterarCor(this)">Item 1</li>
+  <li onclick="alterarCor(this)">Item 2</li>
+  <li onclick="alterarCor(this)">Item 3</li>
+  <li onclick="alterarCor(this)">Item 4</li>
+  <li onclick="alterarCor(this)">Item 5</li>
+</ul>
+  <script src="script.js"></script>
+</body>
+</html>
