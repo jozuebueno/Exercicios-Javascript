@@ -1,0 +1,32 @@
+
+    div{
+        width: 100px;
+        height: 200px;
+        background-color:black;
+    }
+
+
+    
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    
+    .item-clicado {
+        background-color: green; 
+    }
+
+    .elemento {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+      }

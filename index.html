@@ -4,31 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alterar Texto</title>
-  <style>
-    div{
-        width: 100px;
-        height: 200px;
-        background-color:black;
-    }
-
-
-    
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    
-    .item-clicado {
-        background-color: green; 
-    }
-</style>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
   <p id="paragrafo">Texto original</p><!-- exercicio 1 -->
@@ -65,6 +42,10 @@
   <li onclick="alterarCor(this)">Item 4</li>
   <li onclick="alterarCor(this)">Item 5</li>
 </ul>
+
+
+<div id="elemento" class="elemento">Elemento a ser alterado</div>
+<button id="botao">Alterar Opacidade</button>
   <script src="script.js"></script>
 </body>
 </html>

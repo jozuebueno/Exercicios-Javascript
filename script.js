@@ -49,3 +49,10 @@ function alterarCor(item) {
   });
   item.classList.add('item-clicado');
 }
+document.getElementById("botao").addEventListener("click", function() {
+  var elemento = document.getElementById("elemento");
+  var opacidadeAtual = parseFloat(window.getComputedStyle(elemento).opacity);
+  var novaOpacidade = opacidadeAtual === 1 ? 0.5 : 1; 
+
+  elemento.style.opacity = novaOpacidade;
+});
