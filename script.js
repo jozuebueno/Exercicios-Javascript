@@ -56,3 +56,14 @@ document.getElementById("botao").addEventListener("click", function() {
 
   elemento.style.opacity = novaOpacidade;
 });
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+  var element = document.getElementById('myElement');
+  if (element.classList.contains('class1')) {
+      element.classList.remove('class1');
+      element.classList.add('class2');
+  } else {
+      element.classList.remove('class2');
+      element.classList.add('class1');
+  }
+});
